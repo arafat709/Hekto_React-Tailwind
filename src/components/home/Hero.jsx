@@ -4,7 +4,7 @@ import herochair from "../../assets/heroChair.png";
 import chairsbg from "../../assets/heroChairsBg.png";
 import discount from "../../assets/heroDisc.png";
 import lamp from "../../assets/heroLamp.png";
-
+import "../../components/home/Hero.css";  
 import Slider from "react-slick";
 
 const Hero = () => {
