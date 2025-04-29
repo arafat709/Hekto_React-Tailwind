@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+.slick-dots{
+    position: absolute !important;
+    bottom: 10px !important;
+}
+.slick-dots li button::before {
+    content: "" !important;
+    border: 2px solid #FB2E86 !important;
+    transform: rotate(45deg) !important;
+    display: inline-block !important;
+    width: 10px !important;
+    height: 10px !important;
+    transition: background 0.3s !important;
+  }
+  
+  .slick-dots li.slick-active button::before {
+    background: #FB2E86 !important;
+    border: none !important;
+  }
+  
 
 @theme{
     --font-font: 'Josefin Sans', 'lato';

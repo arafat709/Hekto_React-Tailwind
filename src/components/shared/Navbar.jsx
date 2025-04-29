@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="container mx-auto font-font sticky top-0 z-50 bg-white shadow-sm lg:bg-transparent lg:shadow-none">
+    <header className="container mx-auto font-font sticky top-0 z-50 bg-white shadow-sm">
       <div className="flex justify-between items-center py-3 lg:px-44 px-4 sm:px-6">
         <div className="flex justify-between items-center">
           <div className="pr-4 lg:pr-15">

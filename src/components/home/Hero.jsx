@@ -1,17 +1,30 @@
 import React from "react";
-import heroBG from "../assets/heroBg.png";
-import herochair from "../assets/heroChair.png";
-import chairsbg from "../assets/heroChairsBg.png";
-import discount from "../assets/heroDisc.png";
-import lamp from "../assets/heroLamp.png";
+import heroBG from "../../assets/heroBG.png";
+import herochair from "../../assets/heroChair.png";
+import chairsbg from "../../assets/heroChairsBg.png";
+import discount from "../../assets/heroDisc.png";
+import lamp from "../../assets/heroLamp.png";
+
+import Slider from "react-slick";
 
 const Hero = () => {
-  return (
-    <>
-      <div
-        className="container mx-auto bg-cover bg-no-repeat bg-center w-full h-[570px] font-font lg:px-44 px-6 relative"
-        style={{ backgroundImage: `url(${heroBG})` }}
-      >
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
+  // Single slide component to avoid repetition
+  const Slide = () => (
+    <section
+      className="bg-cover bg-no-repeat bg-center w-full h-[570px] font-font lg:px-44 px-6 relative"
+      style={{ backgroundImage: `url(${heroBG})` }}
+    >
+      <div className="container mx-auto h-full">
         <div className="lg:flex lg:justify-between items-center h-full">
           <div className="lg:w-1/2 w-2/3 lg:space-y-3 space-y-2 lg:pt-0 pt-10">
             <img
@@ -52,7 +65,17 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
+  );
+
+  return (
+    <Slider {...settings}>
+      <Slide />
+      <Slide />
+      <Slide />
+      <Slide />
+      <Slide />
+    </Slider>
   );
 };
 
