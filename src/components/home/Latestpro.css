@@ -1,0 +1,19 @@
+react-tabs__tab-list {
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+
+.react-tabs__tab--selected {
+  border: none !important;
+  text-decoration: underline;
+  outline: none !important;
+  color: #fb2e86 !important;
+}
+
+.react-tabs__tab-list {
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+.react-tabs__tab-list {
+  border: none !important;
+}
