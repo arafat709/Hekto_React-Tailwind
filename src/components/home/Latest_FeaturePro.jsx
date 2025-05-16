@@ -1,6 +1,6 @@
 import React from "react";
 import sofa from "../../assets/sofa.png";
-import sofasBg from "../../assets/sofasBG.png";
+import sofasBg from "../../assets/sofasBg.png";
 import bg from "../../assets/bg.png";
 import Slider from "react-slick";
 
