@@ -1,6 +1,6 @@
 import React from "react";
 import sofa from "../../assets/sofa.png";
-import sofasBg from "../../assets/sofasBackground.png";
+import sofasBackground from "../../assets/sofasBackground.png";
 import bg from "../../assets/bg.png";
 import Slider from "react-slick";
 
@@ -27,7 +27,7 @@ const Latest_FeaturePro = () => {
           <div className="lg:w-1/2 w-full h-full flex items-center justify-center relative">
             <div className="absolute inset-0 flex items-center justify-center z-0">
               <img
-                src={sofasBg}
+                src={sofasBackground}
                 alt="sofas background"
                 className="max-w-[80%] max-h-[80%] object-contain opacity-90"
               />

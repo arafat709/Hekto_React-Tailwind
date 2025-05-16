@@ -1,6 +1,6 @@
 import React from "react";
 import "../../components/home/Hero.css";  
-import heroBG from "../../assets/heroBackground.png";
+import heroBackground from "../../assets/heroBackground.png";
 import herochair from "../../assets/heroChair.png";
 import chairsbg from "../../assets/heroChairsBg.png";
 import discount from "../../assets/heroDisc.png";
@@ -22,7 +22,7 @@ const Hero = () => {
   const Slide = () => (
     <section
       className="bg-cover bg-no-repeat bg-center w-full h-[570px] font-font lg:px-44 px-6 relative"
-      style={{ backgroundImage: `url(${heroBG})` }}
+      style={{ backgroundImage: `url(${heroBackground})` }}
     >
       <div className="container mx-auto h-full">
         <div className="lg:flex lg:justify-between items-center h-full">
