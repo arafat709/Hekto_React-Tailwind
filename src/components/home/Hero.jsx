@@ -1,6 +1,6 @@
 import React from "react";
 import "../../components/home/Hero.css";  
-import heroBG from "../../assets/heroBg.png";
+import heroBG from "../../assets/heroBackground.png";
 import herochair from "../../assets/heroChair.png";
 import chairsbg from "../../assets/heroChairsBg.png";
 import discount from "../../assets/heroDisc.png";
