@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import logo from "../../assets/Hekto.png";
 import { IoIosSearch } from "react-icons/io";
 import { RiMenuSearchLine } from "react-icons/ri";
@@ -11,8 +12,8 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <header className="container mx-auto font-font sticky top-0 z-50 bg-white shadow-sm">
+    <section className="font-font sticky top-0 z-50 bg-white shadow-sm">
+      <header className="container mx-auto ">
         <div className="flex justify-between items-center py-3 lg:px-44 px-4 sm:px-6">
           <div className="flex justify-between items-center">
             <div className="pr-4 lg:pr-15">
@@ -26,8 +27,6 @@ const Navbar = () => {
                     : "absolute hidden transition duration-1000 ease-in-out"
                 } flex-col lg:flex-row lg:flex`}
               >
-                {/* it's the search bar for mobile. If "isOpen" is true, show this <li> that contains a search input for mobile.
-                  If "isOpen" is false, React won’t render it at all. This logical AND operator return the second value if the first value is true so if the first value is false...*/}
                 {isOpen && (
                   <li className="relative">
                     <input
@@ -42,49 +41,48 @@ const Navbar = () => {
                 )}
 
                 <li>
-                  <a
+                  <Link
+                    to="/"
                     className="focus:text-pink-500 active:text-pink-500 transition duration-150 block py-2 lg:inline-block lg:py-0"
-                    href="#"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/about"
                     className="focus:text-pink-500 active:text-pink-500 transition duration-150 block py-2 lg:inline-block lg:py-0"
                   >
                     Pages
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/products"
                     className="focus:text-pink-500 active:text-pink-500 transition duration-150 block py-2 lg:inline-block lg:py-0"
                   >
                     Products
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/blog"
                     className="focus:text-pink-500 active:text-pink-500 transition duration-150 block py-2 lg:inline-block lg:py-0"
                   >
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/shop"
                     className="focus:text-pink-500 active:text-pink-500 transition duration-150 block py-2 lg:inline-block lg:py-0"
                   >
                     Shop
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
-          {/* for lg*/}
           <div className="flex items-center gap-2 relative">
             <div className="relative hidden lg:block">
               <input
@@ -92,7 +90,7 @@ const Navbar = () => {
                 type="text"
                 placeholder="Search..."
               />
-              <div className="absolute inset-y-0 lg:right-0 right-8  text-white bg-[#FB2E86] h-[30px] w-[30px] flex justify-center items-center font-bold text-[20px] cursor-pointer rounded-r-md">
+              <div className="absolute inset-y-0 lg:right-0 right-8 text-white bg-[#FB2E86] h-[30px] w-[30px] flex justify-center items-center font-bold text-[20px] cursor-pointer rounded-r-md">
                 <IoIosSearch className="text-white" />
               </div>
             </div>
@@ -106,7 +104,7 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-    </>
+    </section>
   );
 };
 

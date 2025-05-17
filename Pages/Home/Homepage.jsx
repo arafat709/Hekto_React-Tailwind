@@ -1,9 +1,9 @@
 import React from "react";
-import Topbar from "../../src/components/shared/Topbar"
-import Navbar from "../../src/components/shared/Navbar"
-import Hero from "../../src/components/home/Hero"
-import Featuredpro from "../../src/components/home/Featuredpro"
-import Latestpro from "../../src/components/home/Latestpro"
+import Topbar from "../../src/components/shared/Topbar";
+import Navbar from "../../src/components/shared/Navbar";
+import Hero from "../../src/components/home/Hero";
+import Featuredpro from "../../src/components/home/Featuredpro";
+import Latestpro from "../../src/components/home/Latestpro";
 import Homeservice from "../../src/components/home/Homeservice";
 import Latest_FeaturePro from "../../src/components/home/Latest_FeaturePro";
 import Trendingpro from "../../src/components/home/Trendingpro";
@@ -20,7 +20,7 @@ const home = () => {
       <Homeservice />
       <Latest_FeaturePro />
       <Trendingpro />
-      <Discount_Items/>
+      <Discount_Items />
     </>
   );
 };
