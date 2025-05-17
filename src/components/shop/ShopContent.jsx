@@ -106,12 +106,13 @@ const ShopContent = () => {
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row gap-8 lg:px-44 px-6">
           {/* Filters Section */}
-          <div className="w-full lg:w-1/4 space-y-6">
+          <div className="w-full lg:w-1/4">
             {/* Product Brand */}
-            <div className="border-b border-[#000000] pb-2">
-              <h1 className="text-[#151875] font-bold">Product Brand</h1>
+            <div className="pb-4">
+              <h1 className="text-[#151875] font-bold pb-2">Product Brand</h1>
+              <hr />
             </div>
-            <div className="space-y-3">
+            <div>
               {brands.map((brand) => (
                 <div
                   key={brand}
@@ -128,8 +129,11 @@ const ShopContent = () => {
               ))}
               {/* Discount Item */}
               <div className="mt-5">
-                <div className="border-b border-[#000000] pb-2">
-                  <h1 className="text-[#151875] font-bold">Discount Offer</h1>
+                <div className="pb-4">
+                  <h1 className="text-[#151875] font-bold pb-2">
+                    Discount Offer
+                  </h1>
+                  <hr />
                 </div>
                 {discount.map((disc) => (
                   <div
@@ -148,8 +152,9 @@ const ShopContent = () => {
               </div>
               {/* Rating Item */}
               <div className="mt-5">
-                <div className="border-b border-[#000000] pb-2">
-                  <h1 className="text-[#151875] font-bold">Rating Item</h1>
+                <div className=" pb-4">
+                  <h1 className="text-[#151875] font-bold pb-2">Rating Item</h1>
+                  <hr />
                 </div>
                 {ratings.map((rating, index) => (
                   <div
@@ -170,8 +175,9 @@ const ShopContent = () => {
               </div>
               {/* Categories */}
               <div className="mt-5">
-                <div className="border-b border-[#000000] pb-2">
-                  <h1 className="text-[#151875] font-bold">Categories</h1>
+                <div className=" pb-4">
+                  <h1 className="text-[#151875] font-bold pb-2">Categories</h1>
+                  <hr />
                 </div>
                 {categories.map((category) => (
                   <div
@@ -189,8 +195,11 @@ const ShopContent = () => {
               </div>
               {/* Price Filter */}
               <div className="mt-5">
-                <div className="border-b border-[#000000] pb-2">
-                  <h1 className="text-[#151875] font-bold">Price Filter</h1>
+                <div className="pb-4">
+                  <h1 className="text-[#151875] font-bold pb-2">
+                    Price Filter
+                  </h1>
+                  <hr />
                 </div>
                 {price.map((priceRange) => (
                   <div
